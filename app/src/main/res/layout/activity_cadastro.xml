@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Autenticacao.CadastroActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_cadastro_cliente"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="-3dp"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nome Completo"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/text_criar_nome"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#BEC4C8"
+                android:layout_marginBottom="20dp"
+                android:hint="Digite seu nome"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/text_criar_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#BEC4C8"
+                android:layout_marginBottom="20dp"
+                android:hint="Digite seu email"
+                android:padding="5dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Senha" />
+
+            <EditText
+                android:id="@+id/text_criar_senha"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#BEC4C8"
+
+                android:layout_marginBottom="20dp"
+                android:hint="Digite sua senha"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+
+            <Button
+                android:onClick="validaDados"
+                android:id="@+id/btn_cadastrar_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Cadastrar" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

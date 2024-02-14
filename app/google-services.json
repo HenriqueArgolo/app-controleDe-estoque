@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646234722640",
+    "project_id": "controle-de-estoque-ad2b5",
+    "storage_bucket": "controle-de-estoque-ad2b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646234722640:android:1db9130b088483f4e41c55",
+        "android_client_info": {
+          "package_name": "com.example.listagem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtFTFSfbbotmFK3wwOcMpjLhg64WPQmrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
